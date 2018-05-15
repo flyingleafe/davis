@@ -1,11 +1,11 @@
-### A newer version of the code is available at [DAVIS 2017](https://github.com/fperazzi/davis-2017)
+### A newer version of the code is available at [DAVIS 2017](https://github.com/davisvideochallenge/davis-2017)
 
 A Benchmark Dataset and Evaluation Methodology for Video Object Segmentation (DAVIS)
 =====================================================================================
 
-Package containing helper functions for loading and evaluating [DAVIS](https://graphics.ethz.ch/~perazzif/davis/index.html).
+Package containing helper functions for loading and evaluating [DAVIS](https://davischallenge.org/).
 
-A [Matlab](https://github.com/jponttuset/davis-matlab) version of the same package is also available.
+A [Matlab](https://github.com/davisvideochallenge/davis-matlab) version of the same package is also available.
 
 Introduction
 --------------
