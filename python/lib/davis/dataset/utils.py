@@ -19,7 +19,7 @@ from davis.parallel  import Parallel,delayed
 from collections     import defaultdict,OrderedDict
 
 from davis  import cfg,log,Timer
-from loader import DAVISAnnotationLoader,DAVISSegmentationLoader
+from .loader import DAVISAnnotationLoader,DAVISSegmentationLoader
 
 def db_statistics(per_frame_values):
 
@@ -297,10 +297,10 @@ def db_eval_view(db_eval_dict,technique,
 	set_ids = [seq_id for seq_id,seq in enumerate(db_sequences)
 			if eval_set == 'all' or seq.set == eval_set]
 
-	print set_ids
+	print(set_ids)
 
 	table.add_row(['Average'] + ["{: .3f}".format(n)
 		for n in np.nanmean(X[set_ids],axis=0)])
 
-	print "\n" + str(table) + "\n"
+	print("\n" + str(table) + "\n")
 	return str(table)
